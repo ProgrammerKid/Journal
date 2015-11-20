@@ -1,9 +1,17 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("./fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+* {
+    font-family: OpenSans, Sawasdee;
+}
+
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: Sawasdee;
 }
 
 div.container {
@@ -58,6 +66,11 @@ input#entry-title, textarea#entry-body {
     width: 100%;
 }
 
+input#entry-title {
+    font-size: 25px;
+}
+
 textarea#entry-body {
     height: 300px;
+    font-size: 15px;
 }
