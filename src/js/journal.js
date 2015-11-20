@@ -50,7 +50,8 @@ var journal = {
     showEntries: function() {
         var database = JSON.parse(localStorage.getItem("journal")),
             container = document.createElement("div");
-
+        
+        container.id = "entries-container";
         for (var i in database.entries) {
             var post = database.entries[i],
                 wrapper, title, body;
