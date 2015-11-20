@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8"/>
+    <title>Journal</title>
+    <script src="js/journal.js"></script>
+</head>
+
+<body>
+    <script>
+        // If app not setup, redirect before page loads
+
+        var database = localStorage.getItem("journal");
+
+        if (database == null || database == undefined) {
+            window.location = "setup.html";
+        }
+    </script>
+
+    <div class="container">
+        <div class="header">
+            <button onclick="journal.newEntry()">New</button>
+        </div>
+
+        <div class="actions-header"></div>
+    </div>
+</body>
+</html>
