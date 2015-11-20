@@ -16,7 +16,10 @@ window.setInterval(function() {
         button.onclick = function() { window.location = "index.html"; };
 
         // Install Database
-        localStorage.setItem("journal", "{entries: {}}");
+        localStorage.setItem("journal", JSON.stringify({
+            entries: {},
+            nextEntryId: 1
+        }));
 
         document.getElementById("setup-completion").innerHTML = "";
         document.getElementById("setup-completion").appendChild(button);
