@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Sawasdee;
+}
+
+div.container {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/main_background.jpg");
+    background-size: 100% auto;
+}
+
+div.header {
+    padding: 10px;
+}
+
+div.actions-header {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.for-posts {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    padding-left: 300px;
+}
+
+button, input, textarea {
+    background: rgba(200, 200, 200, 0.5);
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 0.5s all;
+}
+
+button:hover, input:hover, textarea:hover {
+    background: rgba(55, 55, 55, 0.5);
+    color: white;
+}
+
+button:focus, input:focus, textarea:focus {
+    background: rgba(55, 55, 55, 0.8);
+    color: white;
+}
+
+button:active, input:active, textarea:active {
+    background: rgba(55, 55, 55, 1);
+    color: white;
+}
+
+input#entry-title, textarea#entry-body {
+    width: 100%;
+}
+
+textarea#entry-body {
+    height: 300px;
+}

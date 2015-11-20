@@ -21,7 +21,7 @@ var journal = {
 
         // Create the entry field
         entryBox = document.createElement("textarea");
-        entryBox.id = "entry-content";
+        entryBox.id = "entry-body";
 
         // Create the save button
         saveButton = document.createElement("button");
@@ -32,7 +32,7 @@ var journal = {
             
             // Get entry metadata
             title = document.getElementById("entry-title").value;
-            body = document.getElementById("entry-content").value;
+            body = document.getElementById("entry-body").value;
             
             // Execute to save the entry
             journal.saveEntry(title, body);
